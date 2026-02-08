@@ -15,7 +15,6 @@
 
 import numpy as np
 
-
 class AttrDict(dict):
   def __init__(self, *args, **kwargs):
       super(AttrDict, self).__init__(*args, **kwargs)
@@ -54,4 +53,5 @@ params = AttrDict(
 # quadratic: (np.linspace(0,1,1000)**2)*(0.01-1e-6) + 1e-6
 # exponential: 1e-6 * ((0.01/1e-6) ** np.linspace(0,1,1000))
 # sigmoid: 1e-6 + (0.01 - 1e-6) * (1 / (1 + np.exp(-5 * (np.linspace(0, 1, 1000) - 0.5))))
+
 # linear_sigmoid: 1e-6 + (0.01 - 1e-6) * (0.5 * (1 / (1 + np.exp(-4 * (np.linspace(0, 1, 1000) - 0.5)))) + 0.5 * np.linspace(0, 1, 1000))
