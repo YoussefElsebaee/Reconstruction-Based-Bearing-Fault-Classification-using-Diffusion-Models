@@ -58,11 +58,9 @@ Detailed analysis and discussion can be found in the thesis manuscript.
 
 ```text
 .
-├── data/                 # Dataset files or data loading scripts
-├── preprocessing/        # Signal preprocessing and feature extraction
-├── diffusion_models/     # Diffusion model implementations and training scripts
-├── cnn_classifier/       # CNN architecture and training code
-├── experiments/          # Experiment configurations and evaluation scripts
-├── utils/                # Helper functions
-├── results/              # Saved results, logs, and figures
+├── data preprocessing/
+├── training files/        
+├── testing files/     
+├── classification/      
+├── visualization/          
 └── README.md
