@@ -29,8 +29,7 @@ f_max = sr_o / 2.0
 mel= TT.MelSpectrogram(sample_rate=sr_o, n_fft=n_fft, win_length=win, hop_length=hop, f_min=20.0, f_max=f_max, power=1.0, normalized=False, center=False)
 
 def log_mel_mse(x, y, sr=12000):
- 
-    #inferences
+
     pad_left  = 874
     pad_right = 874
 
@@ -189,5 +188,6 @@ if __name__ == "__main__":
     # === Save results to Excel ===
     save_path = os.path.join(args.input_dir, "evaluation_results.xlsx")
     df.to_excel(save_path, index=False, sheet_name="Results")
+
 
     print(f"\n📊 Saved results (with averages) to: {save_path}")
